@@ -37,6 +37,7 @@
     "clean": "del-cli android/build example/android/build example/android/app/build example/ios/build"
   },
   "keywords": [
+    "monnify",
     "react-native",
     "ios",
     "android"
