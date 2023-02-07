@@ -63,6 +63,7 @@ dependencies {
   // For > 0.71, this will be replaced by `com.facebook.react:react-android:$version` by react gradle plugin
   //noinspection GradleDynamicVersion
   implementation "com.facebook.react:react-native"
+  implementation 'com.monnify.android-sdk:monnify-android-sdk:1.1.7'
 }
 
 if (isNewArchitectureEnabled()) {
