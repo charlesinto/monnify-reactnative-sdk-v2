@@ -11,11 +11,31 @@ npm install react-native-monnify-react-native-v2
 ## Usage
 
 ```js
-import { multiply } from 'react-native-monnify-react-native-v2';
+import { RNMonnifySDK } from 'react-native-monnify-react-native-v2';
 
 // ...
+RNMonnifySDK.initialize({
+  apiKey: 'XXXXXXXX',
+  contractCode: 'XXXXXXXXX',
+});
 
-const result = await multiply(3, 7);
+RNMonnifySDK.initializePayment({
+  amount: 1200.5,
+  customerName: 'XXXXXXXXXX',
+  customerEmail: 'XXXXXXXXXX',
+  paymentReference: 'XXXXXXXX',
+  paymentDescription: 'XXXXXXXX',
+  currencyCode: 'XXXXXXX',
+  incomeSplitConfig: [],
+})
+  .then((response: any) => {
+    console.log(response); // card charged successfully, get reference here
+  })
+  .catch((error: any) => {
+    console.log(error); // error is a javascript Error object
+    console.log(error.message);
+    console.log(error.code);
+  });
 ```
 
 ## Contributing
