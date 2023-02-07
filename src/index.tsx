@@ -58,33 +58,3 @@ class RNMonnify {
 }
 
 export const RNMonnifySDK = new RNMonnify();
-
-// export function RNMonnify() {
-//   let monnifyInitialized = false;
-
-//   return {
-//     initialize: (options: any) => {
-//       if (typeof options !== 'object') {
-//         return Promise.reject(
-//           new Error('Method argument can only be a Javascript object')
-//         );
-//       }
-
-//       this.monnifyInitialized = true;
-
-//       return MonnifyReactNativeV2.initialize(options);
-//     },
-
-//     initializePayment(paymentParams: any) {
-//       if (typeof paymentParams !== 'object') {
-//         return Promise.reject(
-//           new Error('Method argument can only be a Javascript object')
-//         );
-//       }
-
-//       checkInit(this);
-
-//       return MonnifyReactNativeV2.initializePayment(paymentParams);
-//     },
-//   };
-// };
