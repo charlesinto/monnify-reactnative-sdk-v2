@@ -41,13 +41,13 @@
     "ios",
     "android"
   ],
-  "repository": "https://github.com/charlesinto/react-native-monnify-react-native-v2",
+  "repository": "https://github.com/charlesinto/monnify-reactnative-sdk-v2",
   "author": "charles <charles.onuorah@yahoo.com> (https://github.com/charlesinto)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/charlesinto/react-native-monnify-react-native-v2/issues"
+    "url": "https://github.com/charlesinto/monnify-reactnative-sdk-v2/issues"
   },
-  "homepage": "https://github.com/charlesinto/react-native-monnify-react-native-v2#readme",
+  "homepage": "https://github.com/charlesinto/monnify-reactnative-sdk-v2#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
