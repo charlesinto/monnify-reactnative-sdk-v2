@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5E555C0D2413F4C50049A1A2 /* MonnifyReactNativeV2.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* MonnifyReactNativeV2.m */; };
+		076D45CF29A3D09800BD51B6 /* MonnifyReactNativeV2.mm in Sources */ = {isa = PBXBuildFile; fileRef = 076D45CE29A3D09800BD51B6 /* MonnifyReactNativeV2.mm */; };
+		078C9CEF29A3CABB00D3822D /* MonnifyReactNativeV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 078C9CEE29A3CABB00D3822D /* MonnifyReactNativeV2.m */; };
+		079C333C29A4993900A82218 /* RNMonnifyModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079C333B29A4993900A82218 /* RNMonnifyModule.swift */; };
+		079C334329A4A9F100A82218 /* MonnifyReactNativeV2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079C334229A4A9F100A82218 /* MonnifyReactNativeV2.swift */; };
+		5B4B32C36B502E8BC6234224 /* Pods_MonnifyReactNativeV2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D43B82985E3A8145462E37A /* Pods_MonnifyReactNativeV2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,9 +27,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		076D45CE29A3D09800BD51B6 /* MonnifyReactNativeV2.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MonnifyReactNativeV2.mm; sourceTree = "<group>"; };
+		078C9CEE29A3CABB00D3822D /* MonnifyReactNativeV2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MonnifyReactNativeV2.m; sourceTree = "<group>"; };
+		079C333B29A4993900A82218 /* RNMonnifyModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RNMonnifyModule.swift; sourceTree = "<group>"; };
+		079C333D29A499B800A82218 /* RNMonnifyModule-Bridging-Header.h.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RNMonnifyModule-Bridging-Header.h.h"; sourceTree = "<group>"; };
+		079C334229A4A9F100A82218 /* MonnifyReactNativeV2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonnifyReactNativeV2.swift; sourceTree = "<group>"; };
 		134814201AA4EA6300B7C361 /* libMonnifyReactNativeV2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMonnifyReactNativeV2.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D43B82985E3A8145462E37A /* Pods_MonnifyReactNativeV2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MonnifyReactNativeV2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EEC520252F17A6B2085B601 /* Pods-MonnifyReactNativeV2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MonnifyReactNativeV2.release.xcconfig"; path = "Target Support Files/Pods-MonnifyReactNativeV2/Pods-MonnifyReactNativeV2.release.xcconfig"; sourceTree = "<group>"; };
 		B3E7B5881CC2AC0600A0062D /* MonnifyReactNativeV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonnifyReactNativeV2.h; sourceTree = "<group>"; };
-		B3E7B5891CC2AC0600A0062D /* MonnifyReactNativeV2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MonnifyReactNativeV2.m; sourceTree = "<group>"; };
+		DF2062C3B07C62BBD6DEF297 /* Pods-MonnifyReactNativeV2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MonnifyReactNativeV2.debug.xcconfig"; path = "Target Support Files/Pods-MonnifyReactNativeV2/Pods-MonnifyReactNativeV2.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B4B32C36B502E8BC6234224 /* Pods_MonnifyReactNativeV2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,13 +59,36 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		13508FD0F19A57140969B843 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3D43B82985E3A8145462E37A /* Pods_MonnifyReactNativeV2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
+				079C334229A4A9F100A82218 /* MonnifyReactNativeV2.swift */,
+				079C333D29A499B800A82218 /* RNMonnifyModule-Bridging-Header.h.h */,
+				079C333B29A4993900A82218 /* RNMonnifyModule.swift */,
+				076D45CE29A3D09800BD51B6 /* MonnifyReactNativeV2.mm */,
+				078C9CEE29A3CABB00D3822D /* MonnifyReactNativeV2.m */,
 				B3E7B5881CC2AC0600A0062D /* MonnifyReactNativeV2.h */,
-				B3E7B5891CC2AC0600A0062D /* MonnifyReactNativeV2.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
+				5BDE8FFFCA9F4122A5C2B3CA /* Pods */,
+				13508FD0F19A57140969B843 /* Frameworks */,
 			);
+			sourceTree = "<group>";
+		};
+		5BDE8FFFCA9F4122A5C2B3CA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DF2062C3B07C62BBD6DEF297 /* Pods-MonnifyReactNativeV2.debug.xcconfig */,
+				4EEC520252F17A6B2085B601 /* Pods-MonnifyReactNativeV2.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -63,6 +98,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "MonnifyReactNativeV2" */;
 			buildPhases = (
+				A4FF1F41CC091197AB0F92F3 /* [CP] Check Pods Manifest.lock */,
 				58B511D71A9E6C8500147676 /* Sources */,
 				58B511D81A9E6C8500147676 /* Frameworks */,
 				58B511D91A9E6C8500147676 /* CopyFiles */,
@@ -87,6 +123,7 @@
 				TargetAttributes = {
 					58B511DA1A9E6C8500147676 = {
 						CreatedOnToolsVersion = 6.1.1;
+						LastSwiftMigration = 1420;
 					};
 				};
 			};
@@ -108,12 +145,40 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A4FF1F41CC091197AB0F92F3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MonnifyReactNativeV2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		58B511D71A9E6C8500147676 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3E7B58A1CC2AC0600A0062D /* MonnifyReactNativeV2.m in Sources */,
+				078C9CEF29A3CABB00D3822D /* MonnifyReactNativeV2.m in Sources */,
+				079C333C29A4993900A82218 /* RNMonnifyModule.swift in Sources */,
+				076D45CF29A3D09800BD51B6 /* MonnifyReactNativeV2.mm in Sources */,
+				079C334329A4A9F100A82218 /* MonnifyReactNativeV2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,33 +282,46 @@
 		};
 		58B511F01A9E6C8500147676 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF2062C3B07C62BBD6DEF297 /* Pods-MonnifyReactNativeV2.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../../../React/**",
 					"$(SRCROOT)/../../react-native/React/**",
 				);
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = MonnifyReactNativeV2;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "RNMonnifyModule-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
 		58B511F11A9E6C8500147676 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EEC520252F17A6B2085B601 /* Pods-MonnifyReactNativeV2.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../../../React/**",
 					"$(SRCROOT)/../../react-native/React/**",
 				);
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = MonnifyReactNativeV2;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "RNMonnifyModule-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};

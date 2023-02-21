@@ -8,6 +8,8 @@ const LINKING_ERROR =
 
 const MonnifyReactNativeV2 = NativeModules.MonnifyReactNativeV2
   ? NativeModules.MonnifyReactNativeV2
+  : NativeModules.RNMonnifyModule
+  ? NativeModules.RNMonnifyModule
   : new Proxy(
       {},
       {
@@ -38,6 +40,8 @@ class RNMonnify {
     }
 
     this.monnifyInitialized = true;
+
+    console.log('called ooo> ', options);
 
     return MonnifyReactNativeV2.initialize(options);
   }
