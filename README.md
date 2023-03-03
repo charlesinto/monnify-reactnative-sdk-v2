@@ -13,16 +13,11 @@ npm i monnify-react-native-v2
 ```js
 import { RNMonnifySDK } from 'monnify-react-native-v2';
 
-RNMonnifySDK.initialize({
-  apiKey: 'MK_PROD_2H9QAEL6S9',
-  contractCode: '736278528428',
-  applicationMode: 'LIVE',
-});
-
 // ...
 RNMonnifySDK.initialize({
   apiKey: 'XXXXXXXX',
   contractCode: 'XXXXXXXXX',
+  applicationMode: 'LIVE' || 'TEST',
 });
 
 RNMonnifySDK.initializePayment({
