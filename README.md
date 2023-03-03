@@ -19,8 +19,6 @@ RNMonnifySDK.initialize({
   applicationMode: 'LIVE',
 });
 
-console.log('rnmon> ', RNMonnifySDK);
-
 // ...
 RNMonnifySDK.initialize({
   apiKey: 'XXXXXXXX',
