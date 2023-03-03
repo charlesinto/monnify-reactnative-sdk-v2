@@ -1,22 +1,25 @@
 import * as React from 'react';
 
-import { StyleSheet, View, Button } from 'react-native';
+import { StyleSheet, View, Button, Text } from 'react-native';
 import { multiply, RNMonnifySDK } from 'react-native-monnify-react-native-v2';
 
 RNMonnifySDK.initialize({
-  apiKey: 'MK_PROD_AB4CTHQZYQ',
-  contractCode: '915483727513',
+  apiKey: 'MK_PROD_2H9QAEL6S9',
+  contractCode: '736278528428',
+  applicationMode: 'LIVE',
 });
 
+console.log('rnmon> ', RNMonnifySDK);
+
 export default function App() {
-  const [, setResult] = React.useState<number | undefined>();
+  const [result, setResult] = React.useState<number | undefined>();
 
   const chargeCarge = () => {
     RNMonnifySDK.initializePayment({
       amount: 1200.5,
       customerName: 'Tobi Adeyemi',
       customerEmail: 'tobiadeyemi@gmail.com',
-      paymentReference: '222',
+      paymentReference: `${new Date().getTime()}`,
       paymentDescription: 'Foodies',
       currencyCode: 'NGN',
       incomeSplitConfig: [],
@@ -32,13 +35,13 @@ export default function App() {
   };
 
   React.useEffect(() => {
-    console.log('> RNMonnify: ', RNMonnifySDK);
-    multiply(3, 10).then(setResult);
+    multiply(20, 10).then(setResult);
   }, []);
 
   return (
     <View style={styles.container}>
-      <Button title="Press me" onPress={chargeCarge} />
+      <Text>{result}</Text>
+      <Button title="Pay Now" onPress={chargeCarge} />
     </View>
   );
 }

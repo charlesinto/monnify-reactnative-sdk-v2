@@ -1,4 +1,7 @@
 #import "MonnifyReactNativeV2.h"
+#import "MonnifyReactNativeV2-Bridging-Header.h"
+#import <React/RCTLog.h>
+
 
 @implementation MonnifyReactNativeV2
 RCT_EXPORT_MODULE()
@@ -10,10 +13,15 @@ RCT_REMAP_METHOD(multiply,
                  withResolver:(RCTPromiseResolveBlock)resolve
                  withRejecter:(RCTPromiseRejectBlock)reject)
 {
-    NSNumber *result = @(a * b);
+    NSNumber *result = @(5 * 10);
 
     resolve(result);
 }
+
+RCT_EXPORT_METHOD(initialize :(NSDictionary *)options){}
+
+RCT_EXPORT_METHOD(initializePayment :(NSDictionary *)options :(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject){}
+
 
 // Don't compile this code when we build for the old architecture.
 #ifdef RCT_NEW_ARCH_ENABLED

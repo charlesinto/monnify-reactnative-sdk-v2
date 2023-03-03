@@ -1,17 +1,25 @@
-# react-native-monnify-react-native-v2
+# monnify-react-native-v2
 
 monnify react native sdk
 
 ## Installation
 
 ```sh
-npm install react-native-monnify-react-native-v2
+npm i monnify-react-native-v2
 ```
 
 ## Usage
 
 ```js
-import { RNMonnifySDK } from 'react-native-monnify-react-native-v2';
+import { RNMonnifySDK } from 'monnify-react-native-v2';
+
+RNMonnifySDK.initialize({
+  apiKey: 'MK_PROD_2H9QAEL6S9',
+  contractCode: '736278528428',
+  applicationMode: 'LIVE',
+});
+
+console.log('rnmon> ', RNMonnifySDK);
 
 // ...
 RNMonnifySDK.initialize({

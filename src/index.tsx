@@ -5,9 +5,10 @@ const LINKING_ERROR =
   Platform.select({ ios: "- You have run 'pod install'\n", default: '' }) +
   '- You rebuilt the app after installing the package\n' +
   '- You are not using Expo Go\n';
-
 const MonnifyReactNativeV2 = NativeModules.MonnifyReactNativeV2
   ? NativeModules.MonnifyReactNativeV2
+  : NativeModules.RNMonnifyModule
+  ? NativeModules.RNMonnifyModule
   : new Proxy(
       {},
       {
@@ -27,8 +28,11 @@ const checkInit = (instance: any) => {
   }
 };
 
+console.log('called> ', MonnifyReactNativeV2);
+
 class RNMonnify {
   monnifyInitialized = false;
+  va = true;
 
   initialize(options: any) {
     if (typeof options !== 'object') {

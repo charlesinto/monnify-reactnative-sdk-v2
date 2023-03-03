@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.license      = package["license"]
   s.authors      = package["author"]
 
-  s.platforms    = { :ios => "11.0" }
+  s.platforms    = { :ios => "13.0" }
   s.source       = { :git => "https://github.com/charlesinto/react-native-monnify-react-native-v2.git", :tag => "#{s.version}" }
 
   s.source_files = "ios/**/*.{h,m,mm}"
@@ -31,5 +31,6 @@ Pod::Spec.new do |s|
     s.dependency "RCTRequired"
     s.dependency "RCTTypeSafety"
     s.dependency "ReactCommon/turbomodule/core"
+    s.dependency 'MonnifyiOSSDK', '~> 0.2.6'
   end
 end

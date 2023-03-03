@@ -86,7 +86,6 @@ public class MonnifyReactNativeV2Module extends ReactContextBaseJavaModule imple
 
   @ReactMethod
   public void initialize(ReadableMap options) {
-
     if (hasStringKey(KEY_API_KEY, options)) {
       String apiKey = options.getString(KEY_API_KEY);
       monnify.setApiKey(apiKey);
@@ -100,6 +99,7 @@ public class MonnifyReactNativeV2Module extends ReactContextBaseJavaModule imple
     if (hasStringKey(KEY_APPLICATION_MODE, options)) {
       String applicationMode = options.getString(KEY_APPLICATION_MODE);
       monnify.setApplicationMode(ApplicationMode.valueOf(applicationMode));
+
     }
   }
 
