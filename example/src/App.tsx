@@ -9,14 +9,12 @@ RNMonnifySDK.initialize({
   applicationMode: 'LIVE',
 });
 
-console.log('rnmon> ', RNMonnifySDK);
-
 export default function App() {
   const [result, setResult] = React.useState<number | undefined>();
 
   const chargeCarge = () => {
     RNMonnifySDK.initializePayment({
-      amount: 1200.5,
+      amount: 20,
       customerName: 'Tobi Adeyemi',
       customerEmail: 'tobiadeyemi@gmail.com',
       paymentReference: `${new Date().getTime()}`,
